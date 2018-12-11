@@ -1,0 +1,10 @@
+import itertools as it
+n = int(input())
+ans = 'False'
+l = [int(i) for i in input().split()]
+num = int(input())
+a = list(it.combinations(l, 2))
+for i in a:
+   if  i[0] + i[1] == num:
+       ans = 'True'
+print(ans)
