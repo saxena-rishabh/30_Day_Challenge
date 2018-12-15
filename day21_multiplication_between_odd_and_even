@@ -1,0 +1,10 @@
+n = int(input())
+l = [int(i) for i in input().split()]
+evensum = 0
+oddsum = 0
+for i in l:
+    if i % 2 ==0:
+        evensum += i
+    else:
+        oddsum += i
+print(evensum * oddsum)
