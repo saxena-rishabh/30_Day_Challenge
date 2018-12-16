@@ -1,0 +1,13 @@
+n =int(input())
+l = [int(i) for i in input().split()]
+even = 0
+odd = 0
+for i in range(len(l)):
+    if i % 2 == 0:
+        even += l[i]
+    else:
+        odd += l[i]
+if even >= odd:
+    print(even - odd)
+else:
+    print(odd - even)
