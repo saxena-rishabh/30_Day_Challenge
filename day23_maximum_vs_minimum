@@ -1,0 +1,5 @@
+n = int(input())
+l = [int(i) for i in input().split()]
+ma = max(l)
+mi = min(l)
+print(ma * mi)
