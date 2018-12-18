@@ -1,0 +1,20 @@
+import math
+dataSize = input()
+data = input().split()
+evenCount = 0
+oddCount = 0
+evenSum = 0
+oddSum = 0
+for val in data:
+    if int(val)%2==0:
+        evenCount += 1
+        evenSum += float(val)
+    else:
+        oddCount += 1
+        oddSum += float(val)
+if evenCount==0:
+    print(math.ceil(oddSum/oddCount))
+elif oddCount==0:
+    print(math.ceil(evenSum/evenCount))
+else:
+    print(math.ceil(evenSum/evenCount)+math.ceil(oddSum/oddCount))
