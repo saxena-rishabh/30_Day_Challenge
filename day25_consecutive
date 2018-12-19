@@ -1,0 +1,18 @@
+import math
+
+def main():
+    dataSize = input()
+    data = input().split(" ")
+    data.sort()
+    consFl = True
+    for index,val in enumerate(data):
+        if index != int(dataSize)-1 and int(val)+1 != int(data[index+1]):
+            consFl = False
+            break
+            
+    if consFl:
+        print("True")
+    else:
+        print("False")
+
+main()
