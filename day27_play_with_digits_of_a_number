@@ -1,0 +1,13 @@
+s = input()
+even = 0
+odd = 0
+for i in s:
+    n = int(i)
+    if n % 2 == 0:
+        even += n
+    else:
+        odd += n
+if even >= odd:
+    print(even - odd)
+else:
+    print(odd - even)
