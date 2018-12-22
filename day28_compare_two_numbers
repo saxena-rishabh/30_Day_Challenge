@@ -1,0 +1,15 @@
+x,y  = [(i) for i in input().split()]
+xsum = 0
+ysum = 0
+for i in x:
+    n = int(i)
+    xsum += n
+for i in y:
+    n = int(i)
+    ysum += n
+if xsum > ysum:
+    print(x)
+elif ysum > xsum:
+    print(y)
+else:
+    print('Equal')
