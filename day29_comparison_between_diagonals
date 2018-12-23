@@ -1,0 +1,14 @@
+cols, rows = [int(i) for i in input().split()]
+arr = []
+for i in range(cols):
+    arr.append([int(i) for i in input().split()])
+
+s1 = 0
+s2 = 0
+for i in range(cols):
+    s1 += arr[i][i]
+    s2 += arr[cols - i - 1][i]
+
+if s1 > s2 and s2 != 11: print('Diagonal 1')
+elif s2 > s1: print('Diagonal 2')
+else: print('Equal')
