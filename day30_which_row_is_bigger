@@ -1,0 +1,17 @@
+dim = list(filter(None, input().split(" ")))
+mat = []
+for x in range(int(dim[0])):
+    mat.append(list(filter(None, input().split(" "))))
+
+row = 0
+sum1 = 0
+sum2 = 0
+for index,x in enumerate(mat):
+    sum2 = 0
+    for y in x:
+        sum2 += int(y)
+    if sum2 > sum1:
+        sum1 = sum2
+        row = index
+
+print("Row "+str(row+1))
